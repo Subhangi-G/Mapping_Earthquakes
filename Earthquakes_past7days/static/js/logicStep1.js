@@ -31,14 +31,6 @@ L.control.layers(baseMaps).addTo(map);
 // Accessing earthquake last 7 days GeoJSON URL
 let earthquakes = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
-// Create a style for the lines.
-let myStyle = {
-    "color": "blue",
-    "weight": 1,
-    "fillColor": "yellow",
-    "opacity": 1
-}
-
 //Grabbing our GeoJSON data.
 d3.json(earthquakes).then(function(data) {
     // Creating a GeoSON layer with the retrieved data.
